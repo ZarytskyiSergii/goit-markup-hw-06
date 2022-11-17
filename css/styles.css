@@ -55,10 +55,18 @@ nav {
 
 .contacts {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     list-style: none;
-    align-items: flex-end;
+    align-items: center;
 }
+
+.contacts-mail,
+.contacts-telephone {
+    display: flex;
+    align-items: center;
+}
+
+
 
 .contacts .mail-icon,
 .contacts .telephone-icon {
@@ -69,7 +77,7 @@ nav {
 .header {
     display: flex;
     align-items: center;
-    gap: 244px;
+    gap: 300px;
 }
 
 .logo {
@@ -222,6 +230,9 @@ nav {
     /* letter-spacing: 0.03em; */
 }
 
+.portfolio {
+    padding-bottom: 94px;
+}
 
 .portfolio-title,
 .team-title,
@@ -431,7 +442,7 @@ nav {
 }
 
 .clients {
-    padding: 94px 215px;
+    padding: 94px 0px;
 }
 
 .clients-item {
@@ -439,7 +450,16 @@ nav {
     justify-content: space-between;
 }
 
-.clients-item-thumb {
+/* .clients-item-thumb {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+} */
+
+.clients-link {
+    display: inline-block;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -447,17 +467,19 @@ nav {
     padding: 16px 32px;
 }
 
-.clients-item>li:not(:last-child) {
+.clients-link>li:not(:last-child) {
     margin-right: 30px;
 }
 
 
 
-.clients-item-thumb:hover {
+.clients-link:hover,
+.clients-link:focus {
     border: 1px solid rgba(33, 150, 243, 1);
 }
 
-.clients-item-thumb:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
     fill: rgba(33, 150, 243, 1);
 }
 
@@ -489,12 +511,6 @@ footer {
     text-decoration: none;
 }
 
-.address a:hover,
-.address a:focus {
-    color: #2196F3;
-}
-
-
 .address-map {
     color: #FFFFFF;
 }
@@ -503,6 +519,12 @@ footer {
 .address-map:focus {
     color: #2196F3;
 }
+
+.address a:hover,
+.address a:focus {
+    color: #2196F3;
+}
+
 
 .footer-container {
     display: flex;

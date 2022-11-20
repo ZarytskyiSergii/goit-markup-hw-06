@@ -20,7 +20,7 @@
                 <nav>
                     <a class="logo" href="/">Web<span class="logo-last-part">Studio</span></a>
                     <ul class="navigation">
-                        <li><a href="#">Студія</a></li>
+                        <li><a class="active-link" href="./index.html">Студія</a></li>
                         <li><a href="./portfolio.html">Портфоліо</a></li>
                         <li><a href="#contacts">Контакти</a></li>
                     </ul>
@@ -42,7 +42,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-                <button class="button" type="button">Замовити послугу</button>
+                <button data-modal-open class="button" type="button">Замовити послугу</button>
 
             </div>
         </section>
@@ -99,12 +99,17 @@
                 <h2 class="portfolio-title" id="portfolio">Чим ми займаємося</h2>
                 <ul class="portfolio-examples">
                     <li class="portfolio-examples-items"><img class="portfolio-examples-image" src="./images/img1.jpg"
-                            width="370" alt="руки на клавіатурі"></li>
+                            width="370" alt="руки на клавіатурі">
+                        <p class="leyer">Десктопні додатки</p>
+                    </li>
                     <li class="portfolio-examples-items"><img class="portfolio-examples-image" src="./images/img2.jpg"
                             width="370" alt="в ліва рука тримає телефон права рука на тачпаді">
+                        <p class="leyer">Мобільні додатки</p>
                     </li>
                     <li class="portfolio-examples-items"><img class="portfolio-examples-image" src="./images/img3.jpg"
-                            width="370" alt="кольорова діаграма на екрані айпада"></li>
+                            width="370" alt="кольорова діаграма на екрані айпада">
+                        <p class="leyer">Дизайнерські рішення</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -320,7 +325,16 @@
 
         </div>
     </footer>
-
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="button-modal-exit" type="button">
+                <svg class="close" width="11px" height="11px">
+                    <use href="./images/svg/icon.svg#Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
 
 </html>

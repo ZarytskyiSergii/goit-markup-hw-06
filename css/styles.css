@@ -54,9 +54,14 @@ nav {
 
 }
 
+.navigation .active-link {
+    color: #2196F3;
+}
+
 .navigation a {
     position: relative;
 }
+
 
 /* .navigation a::after {
     content: "";
@@ -357,19 +362,20 @@ nav {
     align-items: center;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #AFB1B8;
 }
 
 
 .social-icon,
 .clients-icon {
-    fill: rgb(175 177 174);
+    fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .team-cards .social-link:hover,
 .team-cards .social-link:focus {
-    background-color: rgba(33, 150, 243, 1);
+    background-color: #2196F3;
 }
 
 
@@ -419,6 +425,7 @@ nav {
 }
 
 .projects-items {
+
     flex-basis: calc((100% - 60px) / 3);
     background: #FFFFFF;
     text-align: left;
@@ -454,11 +461,11 @@ nav {
 }
 
 
-.project-thumb:hover::before {
+.projects-items:hover .project-thumb::before {
     transform: translateY(0%);
 }
 
-.project-thumb:hover .project-thumb-text {
+.projects-items:hover .project-thumb-text {
     transform: translateY(0%);
 }
 
@@ -487,6 +494,7 @@ nav {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     padding: 20px 24px;
+    margin-top: -4px;
 }
 
 .filters a {
@@ -518,16 +526,18 @@ nav {
     background: #F5F4FA;
     border-radius: 4px;
 
+
     list-style: none;
     padding: 6px 25px;
     border: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters-types:hover,
 .filters-types:focus {
     color: #FFFFFF;
     background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filters-titles {
@@ -562,22 +572,26 @@ nav {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     padding: 16px 32px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: currentColor;
 }
 
 .clients-link>li:not(:last-child) {
     margin-right: 30px;
 }
 
-
+.clients-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .clients-link:hover,
 .clients-link:focus {
-    border: 1px solid rgba(33, 150, 243, 1);
+    border: 1px solid #2196F3;
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
-    fill: rgba(33, 150, 243, 1);
+    fill: #2196F3;
 }
 
 footer {

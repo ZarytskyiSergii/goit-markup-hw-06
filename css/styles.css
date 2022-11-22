@@ -32,6 +32,10 @@ ul {
     list-style-type: none;
 }
 
+img {
+    display: block;
+}
+
 /* <-- header  --> */
 header {
     border-bottom: 1px solid #ECECEC;
@@ -488,7 +492,6 @@ nav {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     padding: 20px 24px;
-    margin-top: -4px;
 }
 
 .filters a {
@@ -567,7 +570,7 @@ nav {
     border-radius: 4px;
     padding: 16px 32px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: currentColor;
+    color: #AFB1B8;
 }
 
 .clients-link>li:not(:last-child) {
@@ -725,6 +728,9 @@ footer {
 
 .button-modal-exit {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     background-color: #ffffff;
@@ -732,7 +738,6 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.1);
     top: 8px;
     right: 8px;
-    padding: 8.5px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         250ms cubic-bezier(0.4, 0, 0.2, 1) background-color;
 }

@@ -656,7 +656,7 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    justify-content: space-between;
 }
 
 .address-box {
@@ -677,7 +677,7 @@ footer {
 }
 
 .social-media {
-    margin-top: 6px;
+    padding-top: 6px;
 }
 
 .social-icons {
@@ -722,7 +722,6 @@ footer {
 .modal {
     position: absolute;
     width: 528px;
-    height: 581px;
     top: 50%;
     left: 50%;
     background: #FFFFFF;
@@ -763,11 +762,7 @@ footer {
     cursor: pointer;
 }
 
-.form-sign {
-    position: absolute;
-    top: 72px;
-    left: 815px;
-}
+
 
 .sign {
     display: block;
@@ -862,14 +857,17 @@ footer {
     gap: 4px;
 }
 
-.form-information.policy {
+.form-information-policy {
     height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.form-information-policy a {
+    color: #2196F3;
 }
 
 label {
@@ -880,7 +878,9 @@ label {
 
 }
 
-input {
+input[type=text],
+input[type=tel],
+input[type=email] {
 
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -924,15 +924,6 @@ input:last-child {
     border: 1px solid #2196F3;
 }
 
-
-
-.policy {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 1.71px;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-}
 
 .form textarea {
     width: 100%;
@@ -983,6 +974,13 @@ input:last-child {
     background-color: #188CE8;
 }
 
+.policy {
+    /* display: inline-block; */
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+}
+
 .checkbox-icon {
     display: inline-block;
     width: 16px;
@@ -1000,7 +998,7 @@ input:last-child {
     position: absolute;
 }
 
-.checkbox:checked~.checkbox-icon {
+.checkbox:checked .checkbox-icon {
     border-color: #2196F3;
     background-color: #2196F3;
     background-image: url(../images/svg/checked-icon.svg);

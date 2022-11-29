@@ -322,15 +322,15 @@
                 </ul>
             </div>
 
-
+            <form class="form-sign">
+                <label class="sign" for="">Підпишіться на розсилку</label>
+                <input class="mail-sign" type="mail" id="sign" placeholder="E-mail">
+                <button class="button-sign" type="submit">Підписатися <svg class="send-icon" width="24px" height="24px">
+                        <use href="./images/svg/icon.svg#icon-send"></use>
+                    </svg> </button>
+            </form>
         </div>
-        <Form class="form-sign">
-            <label class="sign" for="">Підпишіться на розсилку</label>
-            <input class="mail-sign" type="mail" id="sign" placeholder="E-mail">
-            <button class="button-sign" type="submit">Підписатися <svg class="send-icon" width="24px" height="24px">
-                    <use href="./images/svg/icon.svg#icon-send"></use>
-                </svg> </button>
-        </Form>
+
     </footer>
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
@@ -372,12 +372,12 @@
                     </div>
                 </div>
                 <div class="form-information-policy">
-                    <input class="checkbox" type="checkbox" name="policy" id="policy">
-                    <span class="checkbox-icon"></span>
-                    <label class="policy" for="policy"> Погоджуюся з розсилкою
+
+                    <label class="policy" for="policy"> <span class="checkbox-icon"></span>Погоджуюся з розсилкою
                         та
                         приймаю <a href="">Умови
                             договору</a></label>
+                    <input class="checkbox" type="checkbox" name="policy" id="policy">
                 </div>
                 <div class="button-wrap">
                     <button class="button-submit" type="submit">Відправити</button>

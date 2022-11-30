@@ -322,7 +322,7 @@
                 </ul>
             </div>
 
-            <form class="form-sign">
+            <form class="form-sign" action="#">
                 <label class="sign" for="">Підпишіться на розсилку</label>
                 <input class="mail-sign" type="mail" id="sign" placeholder="E-mail">
                 <button class="button-sign" type="submit">Підписатися <svg class="send-icon" width="24px" height="24px">
@@ -339,32 +339,32 @@
                     <use href="./images/svg/icon.svg#Vector"></use>
                 </svg>
             </button>
-            <form class="form js-speaker-form" autocomplete="off">
+            <form class="form js-speaker-form" action="#" autocomplete="off">
                 <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
                 <div class="form-information">
                     <div class="form-information-box">
-                        <label for="name">Ім'я</label>
-                        <input type="text" name="user" id="name">
-                        <svg class="form-icon-name" width="18" height="18">
-                            <use href="./images/svg/icon.svg#form-name">
-                            </use>
-                        </svg>
+                        <label for="name">Ім'я<input type="text" name="user" id="name">
+                            <svg class="form-icon-name" width="18" height="18">
+                                <use href="./images/svg/icon.svg#form-name">
+                                </use>
+                            </svg></label>
+
                     </div>
                     <div class="form-information-box">
-                        <label for="telephone">Телефон</label>
-                        <input type="tel" id="telephone">
-                        <svg class="form-icon-tel" width="18" height="18">
-                            <use href="./images/svg/icon.svg#form-tel">
-                            </use>
-                        </svg>
+                        <label for="telephone">Телефон<input type="tel" id="telephone">
+                            <svg class="form-icon-tel" width="18" height="18">
+                                <use href="./images/svg/icon.svg#form-tel">
+                                </use>
+                            </svg></label>
+
                     </div>
                     <div class="form-information-box">
-                        <label for="mail">Пошта</label>
-                        <input type="email" id="mail">
-                        <svg class="form-icon-mail" width="18" height="18">
-                            <use href="./images/svg/icon.svg#form-mail">
-                            </use>
-                        </svg>
+                        <label for="mail">Пошта<input type="email" id="mail">
+                            <svg class="form-icon-mail" width="18" height="18">
+                                <use href="./images/svg/icon.svg#form-mail">
+                                </use>
+                            </svg></label>
+
                     </div>
                     <div class="form-information-box">
                         <label for="comment">Коментар</label>
@@ -373,15 +373,16 @@
                 </div>
                 <div class="form-information-policy">
 
-                    <label class="policy" for="policy"> <span class="checkbox-icon"></span>Погоджуюся з розсилкою
+                    <label class="policy" for="policy"> <input class="checkbox" type="checkbox" name="policy"
+                            id="policy">
+                        <span class="checkbox-icon"></span>Погоджуюся з розсилкою
                         та
                         приймаю <a href="">Умови
                             договору</a></label>
-                    <input class="checkbox" type="checkbox" name="policy" id="policy">
                 </div>
-                <div class="button-wrap">
-                    <button class="button-submit" type="submit">Відправити</button>
-                </div>
+
+                <button class="button-submit" type="submit">Відправити</button>
+
             </form>
         </div>
     </div>

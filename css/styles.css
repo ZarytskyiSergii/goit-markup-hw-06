@@ -656,7 +656,9 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     justify-content: space-between;
+
 }
 
 .address-box {
@@ -676,9 +678,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.social-media {
-    padding-top: 6px;
-}
+
 
 .social-icons {
     display: flex;
@@ -863,7 +863,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .form-information-policy a {
@@ -871,6 +871,8 @@ footer {
 }
 
 label {
+    display: flex;
+    flex-direction: column;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -901,26 +903,26 @@ input:last-child {
 
 .form-icon-name {
     position: absolute;
-    transform: translate(12px, 29px);
+    transform: translate(12px, 25px);
 }
 
 .form-icon-tel {
     position: absolute;
-    transform: translate(12px, 29px);
+    transform: translate(12px, 25px);
 }
 
 .form-icon-mail {
     position: absolute;
-    transform: translate(12px, 29px);
+    transform: translate(12px, 25px);
 }
 
-.form-information-box:focus-within>.form-icon-name,
-.form-information-box:focus-within>.form-icon-tel,
-.form-information-box:focus-within>.form-icon-mail {
+.form-information-box:focus-within .form-icon-name,
+.form-information-box:focus-within .form-icon-tel,
+.form-information-box:focus-within .form-icon-mail {
     fill: #2196F3;
 }
 
-.form-information-box:focus-within>input {
+.form-information-box:focus-within input {
     border: 1px solid #2196F3;
 }
 
@@ -947,12 +949,9 @@ input:last-child {
 
 }
 
-.button-wrap {
-    display: flex;
-    justify-content: center;
-}
 
 .button-submit {
+    display: block;
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -967,6 +966,7 @@ input:last-child {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0;
+    margin: 0 auto;
 }
 
 .button-submit:hover,
@@ -975,7 +975,7 @@ input:last-child {
 }
 
 .policy {
-    /* display: inline-block; */
+    display: inline-block;
     font-size: 14px;
     line-height: 1.71px;
     letter-spacing: 0.03em;
@@ -988,21 +988,18 @@ input:last-child {
     border: 2px solid #000000;
     border-radius: 2px;
     margin-right: 7px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
-    position: absolute;
 }
 
-.checkbox:checked .checkbox-icon {
+.checkbox:checked+.checkbox-icon {
     border-color: #2196F3;
     background-color: #2196F3;
     background-image: url(../images/svg/checked-icon.svg);
-    background-position: top;
     background-size: contain;
     background-origin: border-box;
 
